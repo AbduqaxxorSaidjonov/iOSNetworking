@@ -47,21 +47,21 @@ class AFHttp{
     //AFHttp Params
     
     class func paramsEmpt() -> Parameters{
-        let parameters: Parameters = [
-            :]
+        let parameters: Parameters = [:]
         return parameters
     }
     
-    class func paramsEmployeeCreate(employee: Employee) -> Parameters{
+    class func paramsEmployeeCreate(employee: employeeDetails) -> Parameters{
         let parameters : Parameters = [
             "employee_name": employee.employee_name!,
-            "profile_image": employee.profile_image!,
+            "employee_salary": employee.employee_salary!,
+            "employee_age" : employee.employee_age!,
         ]
         
         return parameters
     }
     
-    class func paramsEmployeeUpdate(employee: Employee) -> Parameters{
+    class func paramsEmployeeUpdate(employee: employeeDetails) -> Parameters{
         let parameters : Parameters = [
             "id": employee.id!,
             "employee_name": employee.employee_name!,

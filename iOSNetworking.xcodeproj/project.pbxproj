@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7632AE7328106CAD00A53692 /* WifiProvayder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632AE7228106CAD00A53692 /* WifiProvayder.swift */; };
+		7632AE7528106F3900A53692 /* customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632AE7428106F3900A53692 /* customer.swift */; };
+		7658E9BA280ADA3800BA3446 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7658E9B9280ADA3800BA3446 /* viewModel.swift */; };
 		767BE97C2801A86C00B410B5 /* iOSNetworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BE97B2801A86C00B410B5 /* iOSNetworkingApp.swift */; };
 		767BE9802801A86C00B410B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767BE97F2801A86C00B410B5 /* Assets.xcassets */; };
 		767BE9832801A86C00B410B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767BE9822801A86C00B410B5 /* Preview Assets.xcassets */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7632AE7228106CAD00A53692 /* WifiProvayder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiProvayder.swift; sourceTree = "<group>"; };
+		7632AE7428106F3900A53692 /* customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customer.swift; sourceTree = "<group>"; };
+		7658E9B9280ADA3800BA3446 /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 		767BE9782801A86C00B410B5 /* iOSNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767BE97B2801A86C00B410B5 /* iOSNetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSNetworkingApp.swift; sourceTree = "<group>"; };
 		767BE97F2801A86C00B410B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7632AE7128106C8F00A53692 /* methods */ = {
+			isa = PBXGroup;
+			children = (
+				7632AE7228106CAD00A53692 /* WifiProvayder.swift */,
+				7632AE7428106F3900A53692 /* customer.swift */,
+			);
+			path = methods;
+			sourceTree = "<group>";
+		};
+		7658E9B8280AD9EA00BA3446 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7658E9B9280ADA3800BA3446 /* viewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		767BE96F2801A86C00B410B5 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +128,8 @@
 		767BE97A2801A86C00B410B5 /* iOSNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				7632AE7128106C8F00A53692 /* methods */,
+				7658E9B8280AD9EA00BA3446 /* Model */,
 				767BE9B22801FADD00B410B5 /* networking */,
 				767BE9AD2801A88E00B410B5 /* apputils */,
 				767BE9AA2801A87600B410B5 /* screens */,
@@ -304,10 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				767BE9B42801FAF100B410B5 /* AFHttp.swift in Sources */,
+				7632AE7328106CAD00A53692 /* WifiProvayder.swift in Sources */,
 				767BE9AC2801A88800B410B5 /* MainScreen.swift in Sources */,
 				767BE9852801A86C00B410B5 /* Persistence.swift in Sources */,
 				767BE9B62802127300B410B5 /* Employee.swift in Sources */,
+				7632AE7528106F3900A53692 /* customer.swift in Sources */,
 				767BE9882801A86C00B410B5 /* iOSNetworking.xcdatamodeld in Sources */,
+				7658E9BA280ADA3800BA3446 /* viewModel.swift in Sources */,
 				767BE97C2801A86C00B410B5 /* iOSNetworkingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
