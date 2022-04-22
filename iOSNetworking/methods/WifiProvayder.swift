@@ -1,12 +1,13 @@
+import Foundation
 
 struct wifiConnecting: Decodable{
-    var time: String?
+    var time: Date?
     var upTime: Int?
-    var vcc: Int?
+    var vcc: Double?
     var power: String?
     var wifi: [Details]?
     
-    init(time: String?,upTime: Int?,vcc: Int?,power: String?,wifi: [Details]?){
+    init(time: Date?,upTime: Int?,vcc: Double?,power: String?,wifi: [Details]?){
         self.time = time
         self.upTime = upTime
         self.vcc = vcc

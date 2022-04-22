@@ -51,7 +51,7 @@ class AFHttp{
         return parameters
     }
     
-    class func paramsEmployeeCreate(employee: employeeDetails) -> Parameters{
+    class func paramsEmployeeCreate(employee: Data) -> Parameters{
         let parameters : Parameters = [
             "employee_name": employee.employee_name!,
             "employee_salary": employee.employee_salary!,
@@ -61,7 +61,7 @@ class AFHttp{
         return parameters
     }
     
-    class func paramsEmployeeUpdate(employee: employeeDetails) -> Parameters{
+    class func paramsEmployeeUpdate(employee: Data) -> Parameters{
         let parameters : Parameters = [
             "id": employee.id!,
             "employee_name": employee.employee_name!,

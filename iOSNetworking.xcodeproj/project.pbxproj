@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762C574B28133CEA00ED34A5 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C574A28133CEA00ED34A5 /* DetailScreen.swift */; };
 		7632AE7328106CAD00A53692 /* WifiProvayder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632AE7228106CAD00A53692 /* WifiProvayder.swift */; };
 		7632AE7528106F3900A53692 /* customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632AE7428106F3900A53692 /* customer.swift */; };
 		7658E9BA280ADA3800BA3446 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7658E9B9280ADA3800BA3446 /* viewModel.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		762C574A28133CEA00ED34A5 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		7632AE7228106CAD00A53692 /* WifiProvayder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiProvayder.swift; sourceTree = "<group>"; };
 		7632AE7428106F3900A53692 /* customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customer.swift; sourceTree = "<group>"; };
 		7658E9B9280ADA3800BA3446 /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				767BE9AB2801A88800B410B5 /* MainScreen.swift */,
+				762C574A28133CEA00ED34A5 /* DetailScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762C574B28133CEA00ED34A5 /* DetailScreen.swift in Sources */,
 				767BE9B42801FAF100B410B5 /* AFHttp.swift in Sources */,
 				7632AE7328106CAD00A53692 /* WifiProvayder.swift in Sources */,
 				767BE9AC2801A88800B410B5 /* MainScreen.swift in Sources */,

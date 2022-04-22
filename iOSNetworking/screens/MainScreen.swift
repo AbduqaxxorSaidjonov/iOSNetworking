@@ -10,17 +10,30 @@ struct MainScreen: View {
     var body: some View {
         NavigationView{
             ZStack{
-               
+                List(self.employeeViewModel.employees, id: \.id){employee in
+                    VStack(alignment: .leading,spacing: 30){
+                        HStack(){
+                        Text(employee.employee_name!.uppercased())
+                            .fontWeight(.bold)
+                        Spacer()
+                        Text("\(employee.employee_age!) y.o")
+                    }
+                        Text("Salary: ")
+                       + Text("\(employee.employee_salary!)")
+                            .fontWeight(.bold)
+                    }
+                }
+                if self.employeeViewModel.isLoading{
+                ProgressView()
+                }
             }
-                .navigationBarTitle("Posts")
+                .navigationBarTitle("Employees")
+                .navigationBarItems(trailing: NavigationLink(destination: DetailScreen()){
+                    Text("Details")
+                })
         }
         .onAppear{
             self.employeeViewModel.apiEmployeeList()
-            //apiEmployeeSingle(id: 1)
-//            let employee = Employee(id: 1, employee_name: "Tiger", profile_image: "", employee_salary: 320800, employee_age: 61)
-            //apiEmployeeCreate(employee: employee)
-           // apiEmployeeUpdate(employee: employee)
-            //apiEmployeeCreate(employee: employee)
         }
         
     }
